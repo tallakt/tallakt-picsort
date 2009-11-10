@@ -11,7 +11,9 @@ begin
     gem.homepage = "http://github.com/tallakt/tallakt-picsort"
     gem.authors = ["Tallak Tveide"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+		gem.executables = ["picsort"]
+		s.add_runtime_dependency(%q<exifr>, [">= 0.10.8"])
+	# gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

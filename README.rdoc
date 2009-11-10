@@ -1,17 +1,15 @@
 = tallakt-picsort
 
-Description goes here.
+A script to move image files to folders with the same name as image date
 
-== Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but
-   bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+= Example
+
+  picsort --base /my/picture/folder/ temp/folder/*.jpg /temp/folder/*.cr2
+
+The script will look at the EXIF information in each image file ad determine
+the name of the folder where it should reside.
+
+This works much like the Canon USB import driver on windows
 
 == Copyright
 
