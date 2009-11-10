@@ -5,14 +5,14 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "tallakt-picsort"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Move image files to folders based on exif date}
+    gem.description = %Q{A simple command line utility that reads the date of image files ans moves them to a folder with the same name aas the ate}
     gem.email = "tallak@tveide.net"
     gem.homepage = "http://github.com/tallakt/tallakt-picsort"
     gem.authors = ["Tallak Tveide"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
 		gem.executables = ["picsort"]
-		s.add_runtime_dependency(%q<exifr>, [">= 0.10.8"])
+		gem.add_runtime_dependency(%q<exifr>, [">= 0.10.8"])
 	# gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
