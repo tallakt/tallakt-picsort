@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
-require 'exifr'
+require 'exifr/tiff'
+require 'exifr/jpeg'
 require 'fileutils'
 require 'optparse'
 
